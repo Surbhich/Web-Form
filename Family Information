@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Information Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    form {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"], input[type="number"], select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Family Information Form</h2>
+    <form action="submit.php" method="post">
+        <label for="name">Name of the Employee:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="dom">Date of Marriage:</label>
+        <input type="date" id="dom" name="dom" required>
+
+        <label for="spouse_name">Name of the Spouse:</label>
+        <input type="text" id="spouse_name" name="spouse_name" required>
+
+        <label for="spouse_dob">Date of Birth of Spouse:</label>
+        <input type="date" id="spouse_dob" name="spouse_dob" required>
+
+        <label for="child_name1">Name of Child 1:</label>
+        <input type="text" id="child_name1" name="child_name1" required>
+
+        <label for="child_dob1">Date of Birth of Child 1:</label>
+        <input type="date" id="child_dob1" name="child_dob1" required>
+
+        <label for="child_name2">Name of Child 2:</label>
+        <input type="text" id="child_name2" name="child_name2">
+
+        <label for="child_dob2">Date of Birth of Child 2:</label>
+        <input type="date" id="child_dob2" name="child_dob2">
+
+        <label for="address">Permanent Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
